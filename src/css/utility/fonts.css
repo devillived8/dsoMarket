@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Inter;
+  src: url(/src/assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url(/src/assets/fonts/Cormorant_SC/CormorantSC-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url(/src/assets/fonts/Cormorant_SC/CormorantSC-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Russo;
+  src: url(/src/assets/fonts/Russo_One/RussoOne-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}

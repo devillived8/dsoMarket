@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DsoMarket</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="cover cover-mobile"></div>
+      <nav class="nav__mobile">
+        <ul class="mobile-list">
+          <li class="mobile-list__element">
+            <a href="" class="mobile-list__link">Гарантии</a>
+          </li>
+          <li class="mobile-list__element">
+            <a href="" class="mobile-list__link">О нас</a>
+          </li>
+          <li class="mobile-list__element">
+            <a href="" class="mobile-list__link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container container--header">
+        <div class="burger-wrapper">
+          <div class="burger">
+            <span class="burger__element"></span>
+            <span class="burger__element"></span>
+            <span class="burger__element"></span>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__element">
+              <a class="link nav__link" href="">Гарантии</a>
+            </li>
+            <li class="nav__element">
+              <a class="link nav__link" href="">О нас</a>
+            </li>
+            <li class="nav__element">
+              <a class="link nav__link" href="">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__logo">
+          <a href="#"
+            ><img
+              src="./src/assets/img/logo.png"
+              alt="Drakensang online logotype"
+              class="logo"
+          /></a>
+        </div>
+        <div class="header__placeholder"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="cover"></div>
+      <div class="container container--main">
+        <h1 class="heading heading--main">Каталог аккаунтов</h1>
+        <aside class="guarant-service">
+          <h2 class="title title--guarant-service">Гарант сервис</h2>
+          <p class="guarant-service__text">
+            Мы предоставляем услуги гаранта, для продажи/обмена ваших аккаунтов.
+            Стоимость проведения сделки 500р, посмотреть отзывы о проведённых
+            сделках вы можете по данной ссылке -
+            <a
+              href="https://vk.com/ipixel?w=wall562994142_24"
+              class="link link--guarant-service"
+              target="_blank"
+              >отзывы</a
+            >
+          </p>
+          <p class="guarant-service__text">
+            Заказать услугу вы можете обратившись напрямую к гаранту -
+            <a class="link link--guarant-service" href="https://vk.com/ipixel"
+              >Гарант</a
+            >
+          </p>
+        </aside>
+
+        <section class="catalog">
+          <article class="filter">
+            <form action="" class="filter__form">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend visually-hidden">Фильтр</legend>
+                <select name="" id="" class="select select--class">
+                  <option value="Dragonknight">Dragonknight</option>
+                  <option value="Spellweaver">Spellweaver</option>
+                  <option value="Ranger">Ranger</option>
+                  <option value="Steam mechanicus">Steam mechanicus</option>
+                </select>
+                <select name="" id="" class="select select--server">
+                  <option value="Grimmag">Grimmag</option>
+                  <option value="Heredur">Heredur</option>
+                  <option value="Werian">Werian</option>
+                  <option value="Harold">Harold</option>
+                  <option value="Agathon">Agathon</option>
+                  <option value="Tegan">Tegan</option>
+                  <option value="Balor-PVP">Balor-PVP</option>
+                </select>
+                <label class="label label--filter">
+                  Мин. цена
+                  <input
+                    type="range"
+                    name=""
+                    id="min-price"
+                    min="0"
+                    max="99999"
+                    value="0"
+                    aria-label="Минимальная цена"
+                  />
+                  <span
+                    class="price-value"
+                    aria-live="polite"
+                    id="min-price-value"
+                    aria-atomic="true"
+                    >0₽</span
+                  >
+                </label>
+                <label class="label label--filter">
+                  Макс. цена
+                  <input
+                    type="range"
+                    name=""
+                    id="max-price"
+                    min="0"
+                    max="99999"
+                    value="99999"
+                    aria-label="Максимальная цена"
+                  />
+                  <span
+                    class="price-value"
+                    aria-live="polite"
+                    aria-atomic="true"
+                    id="max-price-value"
+                    >0₽</span
+                  >
+                </label>
+                <button type="submit" class="button button--filter">
+                  Найти
+                </button>
+              </fieldset>
+            </form>
+          </article>
+          <ul class="cards-list">
+            <li class="cards-list__item">
+              <article class="card">
+                <img
+                  src="./src/assets/img/test1.jpg"
+                  class="account-img"
+                  alt="Картинка аккаунта"
+                />
+                <div class="card__text-content">
+                  <h2 class="account__title">Воин дракона 80 уровня</h2>
+                  <p class="link account-class">Класс:</p>
+                  <p class="link account-server">Сервер:</p>
+                  <p class="link account-description">Описание:</p>
+                  <p class="link account-price">Цена:</p>
+                  <a href="" class="link account-button">Подробнее</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container container--footer">
+        <address class="footer__author">
+          Разработка:
+          <a
+            href="https://t.me/devillived8"
+            rel="author"
+            target="_blank"
+            class="link footer__link"
+          >
+            devillived8
+          </a>
+        </address>
+        <p class="footer__copyright">© 2025 DsoMarket</p>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

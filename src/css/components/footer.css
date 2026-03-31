@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 2px solid var(--border-primary);
+}
+
+.container--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__link {
+  color: var(--text-primary);
+}
