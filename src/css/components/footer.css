@@ -1,15 +1,14 @@
-.footer {
+.footer{
   background-color: var(--bg-secondary);
-  border-top: 2px solid var(--border-primary);
+  padding: var(--spacing-sm);
+  border-top: 1px solid var(--border-primary);
 }
 
-.container--footer {
+.footer__address{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.footer__link {
-  color: var(--text-primary);
+.footer__copyright{
+  text-align: center;
 }

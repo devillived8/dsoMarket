@@ -1,19 +1,10 @@
 .main {
-  flex: 1;
   background-image: url(/src/assets/img/main-bg.png);
-  background-position: top;
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-}
-
-.cover {
-  position: absolute;
-  background-color: rgba(0 0 0 / 0.6);
-  backdrop-filter: blur(2px);
-  z-index: 0;
-  inset: 0;
 }
 
 .container--main {
@@ -21,126 +12,9 @@
   position: relative;
 }
 
-.heading--main {
-  padding: var(--spacing-md);
+.main__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
   text-align: center;
-  font-size: var(--font-size-3xl);
-}
-
-.cards-list__item {
-}
-
-.cards-list {
-  border-top: 1px solid var(--border-primary);
-  border-bottom: 1px solid var(--border-primary);
-  border-radius: 0 0 10px 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
-  grid-auto-rows: auto;
-}
-
-.card {
-  border: 1px solid var(--border-primary);
-  height: 100%;
-  background-color: var(--bg-primary-opacity);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0 / 0.2);
-  transition:
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
-}
-
-.card:hover {
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0 / 0.35),
-    0 0 0 1px rgba(255, 215, 0 / 0.2);
-  transform: translateY(-4px);
-}
-
-.account-img {
-  max-height: 150px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 10px 10px 0 0;
-  border-bottom: 1px solid var(--border-primary);
-}
-
-.card__text-content {
-  padding: var(--spacing-sm);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-}
-
-.account__title {
-  align-self: center;
-}
-
-.account-class {
-}
-
-.account-server {
-}
-
-.account-description {
-}
-
-.account-price {
-}
-
-.account-button {
-  color: inherit;
-  font-family: var(--font-accent);
-  border: 1px solid var(--border-primary);
-  display: block;
-  text-align: center;
-  align-self: center;
-  margin-top: auto;
-  margin-bottom: var(--spacing-sm);
-  border-radius: 6px;
-  padding: var(--spacing-sm);
-  transition: background-color 0.3s ease;
-}
-
-.account-button:hover {
-  background-color: var(--bg-accent);
-}
-
-.filter {
-  padding: var(--spacing-md);
-  border-top: 1px solid var(--border-primary);
-  border-radius: 8px;
-}
-
-.filter__form {
-}
-
-.filter__fieldset {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
-}
-
-.label--filter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button--filter {
-  padding: var(--spacing-sm);
-  transition: background-color 0.3s ease;
-}
-
-.button--filter:hover {
-  background-color: var(--bg-accent);
+  margin: var(--spacing-md) 0;
 }

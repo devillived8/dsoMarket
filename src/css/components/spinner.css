@@ -1,0 +1,28 @@
+.spinner {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-primary);
+  z-index: 2;
+}
+
+
+.spinner__element {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-top: 2px solid var(--border-accent);
+  border-radius: var(--radius-full);
+  animation: spin 1s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

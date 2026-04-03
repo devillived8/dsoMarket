@@ -2,20 +2,16 @@
 
 @import url(./css/utility/fonts.css);
 
-@import url(./css/utility/global.css);
+@import url(./css/utility/base.css);
 
-@import url(./css/components/burger.css);
-
-@import url(./css/components/mobile-menu.css);
+@import url(./css/components/spinner.css);
 
 @import url(./css/components/header.css);
 
 @import url(./css/components/main.css);
 
+@import url(./css/components/cards.css);
+
 @import url(./css/components/footer.css);
-
-@import url(./css/components/aside.css);
-
-@import url(./css/utility/media.css);
 
 @import url(./css/utility/variable.css);
