@@ -1,0 +1,54 @@
+.filter{
+  margin-bottom: var(--spacing-md);
+  background-color: var(--bg-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
+.filter__form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.filter__fieldset{
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.filter__select{
+  border: 1px solid var( --border-primary);
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: border .3s ease;
+  cursor: pointer;
+}
+
+.filter__select:hover{
+  border: 1px solid var(--border-accent);
+}
+
+.filter__select > option{
+  background-color: var(--bg-secondary);
+  border: 1px solid var( --border-primary);
+}
+
+.filter__price{
+  flex-basis: 100px;
+  border: 1px solid var( --border-primary);
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: border .3s ease;
+  cursor: pointer;
+}
+
+.filter__price:hover{
+  border: 1px solid var(--border-accent);
+}
+
+.filter__price::placeholder{
+  font-size: var(--font-size-sm);
+}
+

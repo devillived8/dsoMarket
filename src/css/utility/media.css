@@ -1,0 +1,9 @@
+@media (max-width:646px) {
+    .nav__list{
+      display: none;
+    }
+
+    .burger{
+      display: flex;
+    }
+} 

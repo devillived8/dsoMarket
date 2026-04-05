@@ -6,12 +6,31 @@
     <title>DsoMarket</title>
   </head>
   <body class="page">
+    <div class="overlay overlay--mobile"></div>
+    <nav class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Гарантии</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">О нас</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
     <div class="spinner">
       <div class="spinner__element"></div>
     </div>
     <header class="header">
       <div class="container container--header">
         <nav class="nav">
+          <button class="burger">
+            <span class="burger__element"></span>
+            <span class="burger__element"></span>
+            <span class="burger__element"></span>
+          </button>
           <ul class="nav__list">
             <li class="nav__element">
               <a href="" class="link">Гарантии</a>
@@ -26,7 +45,10 @@
         </nav>
         <div class="header__logo-wrapper">
           <a href="" class="link"
-            ><img src="./src/assets/img/logo.png" alt="" class="header__logo-img"
+            ><img
+              src="./src/assets/img/logo.png"
+              alt=""
+              class="header__logo-img"
           /></a>
         </div>
       </div>
@@ -38,14 +60,60 @@
 
         <section class="filter">
           <form action="" class="filter__form">
+            <fieldset class="filter__fieldset">
+              <legend class="visually-hidden">Выбор сервера и класса</legend>
+              <select name="" id="" class="filter__select">
+                <option value="" selected>Любой сервер</option>
+                <option value="">Grimmag</option>
+                <option value="">Heredur</option>
+                <option value="">Werian</option>
+                <option value="">Balor-PVP</option>
+                <option value="">Agathon</option>
+                <option value="">Tegan</option>
+              </select>
+              <select name="" id="" class="filter__select">
+                <option value="" selected>Любой класс</option>
+                <option value="">Dragonknight</option>
+                <option value="">Ranger</option>
+                <option value="">Spellweaver</option>
+                <option value="">Steam mechanicus</option>
+              </select>
+            </fieldset>
 
+            <fieldset class="filter__fieldset">
+              <legend class="visually-hidden">Выбор цены</legend>
+
+              <input
+                type="number"
+                name=""
+                id=""
+                min="0"
+                max="99999"
+                class="filter__price"
+                placeholder="Мин. цена"
+              />
+
+              <input
+                type="number"
+                name=""
+                id=""
+                min="0"
+                max="99999"
+                class="filter__price"
+                placeholder="Макс. цена"
+              />
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="visually-hidden">Кнопки управления</legend>
+              <button type="reset" class="button">Сбросить</button>
+              <button type="submit" class="button">Найти</button>
+            </fieldset>
           </form>
         </section>
 
         <ul class="cards">
           <!-- Карточки добавляются через js -->
         </ul>
-
       </div>
     </main>
     <footer class="footer">
@@ -53,10 +121,14 @@
         <address class="footer__address">
           <p class="text">
             Создатель -
-            <a class="link" href="https://t.me/devillived8" target="_blank">tg</a>
+            <a class="link" href="https://t.me/devillived8" target="_blank"
+              >tg</a
+            >
           </p>
         </address>
-        <p class="text footer__copyright">&copy; 2026 DSOmarket. Все права защищены.</p>
+        <p class="text footer__copyright">
+          &copy; 2026 DSOmarket. Все права защищены.
+        </p>
       </div>
     </footer>
     <script type="module" src="src/main.js"></script>

@@ -8,10 +8,16 @@
 
 @import url(./css/components/header.css);
 
+@import url(./css/components/burger.css);
+
 @import url(./css/components/main.css);
+
+@import url(./css/components/filter.css);
 
 @import url(./css/components/cards.css);
 
 @import url(./css/components/footer.css);
+
+@import url(./css/utility/media.css);
 
 @import url(./css/utility/variable.css);
